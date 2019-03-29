@@ -1,21 +1,12 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #333333;
 	color: white;
 	padding: 0;
 	margin: 0;
-}
-
-nav {
-	background-color: white;
-}
-
-.top_banner {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: white;
-	top: 0;
-	left: 0;
 }
 
 table {
@@ -26,10 +17,36 @@ h1 {
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.relaxed_blue {
+	background-color: #bad4ff;
+}
+
+.top_banner {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+
 .title {
 	text-align: center;
 }
 
-.body {
+.body_text {
 	margin: 2%;
+}
+
+p.indent1 {
+	text-indent: 2%;
+}
+
+p.indent2 {
+	text-indent: 4%;
 }

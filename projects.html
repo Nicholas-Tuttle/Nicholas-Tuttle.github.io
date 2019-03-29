@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class="top_banner">
+		<div class="top_banner relaxed_blue">
 			<nav>
 				<h1>
 					<table>
@@ -19,9 +19,35 @@
 				</h1>
 			</nav>
 		</div>
+		<div><h1>*</h1></div> <!-- This is so that the top banner doesn't cover up the title-->
 		<h1 class="title">Projects</h1>
-		<div class="body">Decision Tree-Based Handwritten Digit Classifier:</div>
-		<div class="body">N-Dimensional Clustering Algorithm:</div>
-		<div class="body">Frequent Itemset and Ruleset Generator:</div>
+		<h3>
+			<ul class="relaxed_blue">
+				<li><a href="#DTBHDC">Decision Tree-Based Handwritten Digit Classifier</a></li>
+				<li><a href="#NDCA">N-Dimensional Clustering Algorithm</a></li>
+				<li><a href="#FIaRG">Frequent Itemset and Ruleset Generator</a></li>
+			</ul>
+		</h3>
+		<h2><ul><li><div class="body_text" id="DTBHDC" >Decision Tree-Based Handwritten Digit Classifier:</div></li></ul></h2>
+			<p class="body_text" style="height:1000px">This is where I will put information about the decision tree-based handwritten digit classifier.
+			I haven't created this section yet though. Coming soon!</p>
+		<h2><ul><li><div class="body_text" id="NDCA" style="height:1000px">N-Dimensional Clustering Algorithm:</div></li></ul></h2>
+		<h2><ul><li><div class="body_text" id="FIaRG" style="height:1000px">Frequent Itemset and Ruleset Generator:</div></li></ul></h2>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("a").on('click', function(event) {
+				if(this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, function() {
+						window.location.hash = hash;
+					});
+				}
+			});
+		});
+	</script>
 </html>
