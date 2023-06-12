@@ -1,20 +1,41 @@
 :root {
-	--blue-background: #7e87ff;
+	--blue-background: #7a83ff;
 	--blue-light: #c0dcfd;
-	--blue-mid: #abbbff;
 	--blue-border: #6f7dff;
 	--blue-text: #1b00b6;
-}
-
-html {
-	scroll-behavior: smooth;
+	--grey-mid: #333333;
+	--grey-light: #505050;
+	--font-color: white;
+	--font-size: x-large;
 }
 
 body {
-	background-color: #333333;
-	color: white;
-	padding: 1%;
-	margin: 0;
+	font-size: var(--font-size);
+	background-color: var(--grey-mid);
+	color: var(--font-color);
+	margin: 0%;
+}
+
+div.header {
+	background-color: var(--blue-background);
+}
+
+div.body-text {
+	margin-top: 1%;
+	margin-bottom: 1%;;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+a {
+	color: var(--font-color);
+}
+
+hr {
+	height: 2px;
+	color: var(--grey-light);
+	background: var(--grey-light);
+	border-width: 0;
 }
 
 table {
@@ -25,53 +46,33 @@ table {
 h1 {
 	margin: 0;
 }
-
-a {
-	text-decoration: none;
-	color: black;
+h2.indent {
+	text-indent: 1%;
+}
+h3.indent {
+	text-indent: 2%;
+}
+h4.indent {
+	text-indent: 3%;
+}
+h5.indent {
+	text-indent: 4%;
 }
 
-.title {
-	text-align: center;
-}
-
-.body_text {
-	margin: 5%;
-}
-
-p.indent1 {
-	text-indent: 5%;
-}
-
-p.indent2 {
-	text-indent: 10%;
-}
-
-.relaxed_blue {
-	background-color: var(--blue-background);
-}
-
-.button-curved {
+button.blue-curved {
+	background: var(--blue-light);
+	color: var(--blue-text);
+	border-color: var(--blue-border);
 	border-radius: 10px; 
+	border-style: solid;
+	font-size: var(--font-size);
 	text-align: center;
 	width: 100%; 
 	height: 100%;
-	padding: 0%;
 	cursor: pointer;
-	padding: 5%;
+	padding: 2%;
 }
 
-.square-content {
-	aspect-ratio: 1/1;
-}
-
-.blue-gradient {
-	background: linear-gradient(to bottom, var(--blue-light), var(--blue-mid));
-	border-color: var(--blue-border);
-	border-style: solid;
-	color: var(--blue-text);
-}
-
-.emphasized-text {
-	font-size: x-large;
+img.inline {
+	max-height: 700px;
 }
