@@ -1,3 +1,11 @@
+:root {
+	--blue-background: #7e87ff;
+	--blue-light: #c0dcfd;
+	--blue-mid: #abbbff;
+	--blue-border: #6f7dff;
+	--blue-text: #1b00b6;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -11,6 +19,7 @@ body {
 
 table {
 	width: 100%;
+	table-layout: fixed;
 }
 
 h1 {
@@ -22,31 +31,47 @@ a {
 	color: black;
 }
 
-.relaxed_blue {
-	background-color: #bad4ff;
-}
-
-.top_banner {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	top: 0;
-	left: 0;
-	position: fixed;
-}
-
 .title {
 	text-align: center;
 }
 
 .body_text {
-	margin: 2%;
+	margin: 5%;
 }
 
 p.indent1 {
-	text-indent: 2%;
+	text-indent: 5%;
 }
 
 p.indent2 {
-	text-indent: 4%;
+	text-indent: 10%;
+}
+
+.relaxed_blue {
+	background-color: var(--blue-background);
+}
+
+.button-curved {
+	border-radius: 10px; 
+	text-align: center;
+	width: 100%; 
+	height: 100%;
+	padding: 0%;
+	cursor: pointer;
+	padding: 5%;
+}
+
+.square-content {
+	aspect-ratio: 1/1;
+}
+
+.blue-gradient {
+	background: linear-gradient(to bottom, var(--blue-light), var(--blue-mid));
+	border-color: var(--blue-border);
+	border-style: solid;
+	color: var(--blue-text);
+}
+
+.emphasized-text {
+	font-size: x-large;
 }
